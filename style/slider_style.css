@@ -1,0 +1,41 @@
+/*:root {
+    --main-bg-color:#fff;
+    --main-txt-color: #042447; 
+    --main-gray-color: #EDEDED;
+    font-family: 'Work Sans',sans-serif;
+}*/
+
+
+/* OWL CAROUSEL NAV STYLES FOR PRODUCT SLIDER*/
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: -50px;
+    display: block!IMPORTANT;
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    right: -40px;
+    display: block!IMPORTANT;
+    border:0px solid black;
+}
+.owl-prev i, .owl-next i { color: #ccc;}
+
+
+.owl-nav {
+    font-size:6rem;
+    top:0px;
+    color: var(--main-txt-color);
+    
+}
+
+
+/* OWL CAROUSEL NAV HEIGHT MOD FOR BLOG SLIDER*/
+#blog-jquery-handle .owl-prev, #blog-jquery-handle .owl-next { top:-10%; }

@@ -1,0 +1,345 @@
+/* 
+A - GLOBAL STYLES 
+B - HOME PAGE STYLES
+*/
+
+
+/* A- GLOBAL STYLES */
+/*ROOT VARIABLES*/
+:root {
+    --main-bg-color:#fff;
+    --main-txt-color: #042447; /*#042447  #003087  #587498 #2C8EBF*/
+    --main-gray-color: #ededed; /*#EDEDED #E8E7E5 #c7c7c7 #ccc #3B3B3B*/
+    font-family: 'Work Sans',sans-serif;
+    overflow-x: hidden !important;
+}
+
+/* 01 - BODY STYLING */
+body {
+background-color:var(--main-bg-color) !important;
+user-select: none;
+margin:0;
+padding:0;
+}
+
+
+/* 02 - NAVIGATION BAR STYLING */
+
+
+/*Header Icons*/
+/* #header-icons {
+    background-color:var(--main-txt-color);
+    color:var(--main-bg-color);
+    font-size:1rem !important;
+    margin:0;
+    height:2rem;
+    line-height:2rem;
+}
+#header-icons a { 
+   color:inherit;
+   margin-right:0.8rem;  
+}
+
+#header-icons span {margin-right:2rem; }
+
+#header-icons a:hover {
+    transform: scale(1.2);
+} */
+
+
+.navbar {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem; 
+    margin-bottom: 0.8rem;
+    margin-top:0rem;
+    background-color: var(--main-gray-color) ! important;
+    z-index: 9999;
+    border: 0;
+    font-size: 0.8rem;
+    line-height: 1.42857143;
+    letter-spacing: 0.025rem;  
+    padding:0.8rem 1.5rem !important;
+}
+
+
+/* company*/
+#company-logo { font-size: 1.2rem; font-weight:bold;}
+
+
+/*navigation bar contents styles */
+.navbar li a, .navbar .navbar-brand {
+    color: var(--main-txt-color) !important;
+    margin:0px 2px 0px 2px;
+    font-weight: bolder;
+}
+
+/*navigation bar href contents styles on hover */
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    background-color: var(--main-bg-color) !important ;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000 !important;
+}
+
+
+/*B-HOME PAGE LANDING STYLING */
+
+/*background-image*/
+
+.home-inner {
+    margin:0;
+    padding:0;
+    max-width:100%;
+    height:100vh;
+    background-image: url('../images/banner-home%20-%20Copy_1.jpg');
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-origin:border-box;
+    z-index:-1;
+    opacity:1;
+}
+
+/*caption*/
+.caption {
+margin-top: -60vh !important;
+color: var(--main-txt-color);
+padding:20px;   
+max-width:100%;
+margin:auto;
+opacity:0.99;
+}
+
+
+.caption h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+/*search-box styles*/
+#searchdiv { 
+    position: relative;
+    margin-top: 0vh;
+}
+
+.input-group[input-type=text] {
+   width:1000px;
+}
+
+
+#search-button { 
+    background-color: var(--main-txt-color);
+    color: white;
+}
+
+/*caption-under-searchbox*/
+.caption-under {
+margin-top: 0vh !important;
+color: var(--main-txt-color);
+padding:20px;   
+max-width:100%;
+margin:auto;
+opacity:0.99;
+}
+
+.caption-under h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+
+/*INDUSTRIES TRACKED STYLES*/
+#industries {
+    margin-top: 30vh;
+    margin-bottom: 5vh;
+    padding:3vh;
+    background-color: var(--main-bg-color);
+}
+
+#industries h3 {
+    font-size:1.5rem;
+    font-weight: bolder;
+    color: var(--main-txt-color);
+}
+
+
+
+#industries h5 {
+    font-size:  1.25rem;
+    font-weight: bold;
+    color: var(--main-txt-color);
+}
+
+
+
+/*PRODUCT SLIDER STYLES*/
+    
+#product-slider {
+    background-color: var(--main-gray-color);
+    max-width: 100%;
+    padding:1rem 4rem;
+    box-sizing: border-box;
+}
+
+#product-slider h3 { 
+    font-size: 1.5rem; 
+    font-weight: bolder;
+    margin:0.5rem auto;
+    color:var(--main-txt-color);
+}
+
+
+/*Product Card Styles*/
+#product-slider .card .card-title { 
+    line-height: 0;
+    font-size:1.4rem;
+    font-weight: bold;
+}
+
+.muted {font-size:1rem;font-weight:bold;}
+
+#product-slider .btn {
+    background-color: var(--main-txt-color);
+    color: var(--main-bg-color);
+    font-weight: bold;
+}
+
+#product-slider .card-body .btn {
+    background-color: var(--main-gray-color);
+    color: var(--main-txt-color);
+}
+    
+
+/*WHY US SECTION STYLES*/
+#why-us {
+    margin: 5vh auto;
+    padding:3vh;
+    background-color: var(--main-bg-color);
+}
+
+#why-us h3 {
+    font-size:2rem;
+    font-weight: bolder;
+    color: var(--main-txt-color);
+}
+
+#why-us h5 {
+    font-size:  1.25rem;
+    font-weight: bold;
+    color: var(--main-txt-color);
+}
+
+
+/*BLOG POST SLIDER STYLES*/
+#blog-post-slider {
+    /*background-color:var(--main-txt-color);*/
+    margin-bottom: 3vh;
+    background-color: var(--main-gray-color);
+    max-width: 100%;
+    padding:1rem 4rem;
+    box-sizing: border-box;
+}
+
+#blog-post-slider h3 { 
+    font-size: 1.5rem; 
+    font-weight: bolder;
+    margin:0.5rem auto;
+    color:var(--main-txt-color);
+}
+
+
+/*Product Card Styles*/
+
+#blog-post-slider .card .card-title { 
+    line-height: 1;
+    font-size:1.4rem;
+    font-weight: bold;
+}
+
+#blog-post-slider .btn {
+    background-color: var(--main-txt-color);
+    color: var(--main-bg-color);
+    font-weight: bold;
+}
+
+#blog-post-slider .card-body .btn {
+    background-color: var(--main-gray-color);
+    color: var(--main-txt-color);
+}
+    
+/*FREE CONSULTATION STYLES*/
+#consult-sect {
+    color:var(--main-txt-color);
+    margin: 5vh auto;
+}
+
+#consult-sect h3 {font-size:1.5rem; font-weight:bolder;}
+
+#consult-sect p {font-size:1.2rem;}
+
+
+/*FREE CONSULTATION*/
+#msg-box {
+    height:8rem;
+}
+
+/*Place-holder*/
+
+#consult-sect .btn{
+    font-weight: bold;
+    color:var(--main-bg-color);
+    background-color:var(--main-txt-color);
+}
+
+/*FOOTER STYLES*/
+#footer {
+    background-color:var(--main-gray-color);
+    color: var(--main-txt-color);
+}
+
+.footer-icons { margin-left:-40px;}
+
+.footer-icons ul li {
+  display: inline-block;
+}
+
+.footer-icons ul li a {
+  border: 1px solid var(--main-txt-color);
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 38px;
+  margin-right: 5px;
+  text-align: center;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.footer-icons ul li a:hover{transform: scale(1.2);}
+
+#footer-pages a{ color: inherit; text-decoration:none;}
+
+
+/*SUBSCRIPTION STYLES*/
+
+#subscribe-sect h3 { 
+    font-size: 1.5rem; 
+    font-weight: bolder; 
+}
+
+#subscribe-sect .btn {
+    color:var(--main-bg-color);
+    background-color:var(--main-txt-color);
+    font-weight:bold;
+}
